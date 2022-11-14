@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function NavButton() {
+export default function NavButton({menuHandler}) {
   return (
     <>
       <button className="bg-primary py-4 px-6 rounded-lg text-white hidden lg:block">
         Connect to wallet
       </button>
-      <button className="bg-primary py-2 px-4 rounded-lg text-white lg:hidden">
+      <button onClick={menuHandler} className="bg-primary py-2 px-4 rounded-lg text-white lg:hidden">
         Menu
       </button>
     </>

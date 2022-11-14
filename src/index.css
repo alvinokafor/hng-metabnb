@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#mobile-menu[data-visible='true'] {
+    display: block;
+}
+
+#mobile-menu {
+    display: none;
+}
