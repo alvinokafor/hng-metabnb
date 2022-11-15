@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'primary': '#A02279',
         'secondary': '#434343',
+        'footer': '#1D1D1E',
       },
       fontFamily: {
         'sans': ['Red Rose', 'san-serif']

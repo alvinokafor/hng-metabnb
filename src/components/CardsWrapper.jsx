@@ -1,4 +1,5 @@
 import Card from "./Card";
+import {useLocation} from 'react-router-dom'
 
 const CardData = [
   "/assets/sand-house.png",
@@ -11,10 +12,21 @@ const CardData = [
   "/assets/harry-potter.png",
 ];
 
-export default function CardsWrapper() {
+export default function CardsWrapper({ margin, allCards }) {
+
+  const location = useLocation().pathname
+  const currentPath = location.split('/')[1]
+  
+
   return (
-    <section className="mt-10 grid gap-y-8 md:gap-y-8 place-content-end grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-      {CardData.map((card, index) => (
+    <section
+      className={`${margin} mt-10 grid gap-y-8 md:gap-y-8 md:gap-x-6 place-content-end grid-cols-1 md:grid-cols-2 lg:grid-cols-4`}
+    >
+      {currentPath === "" && CardData.map((card, index) => (
+        <Card key={index + 1} image={card} />
+      ))}
+
+      {currentPath === 'nfts' && allCards.map((card, index) => (
         <Card key={index + 1} image={card} />
       ))}
     </section>
