@@ -24,10 +24,11 @@ export default function Nav({ setModalOpen }) {
           <Link to="/">
             <li>Home</li>
           </Link>
-          <li>Place to stay</li>
-          <Link to="/nfts">
-            <li>NFTs</li>
+          <Link to="/places-to-stay">
+            <li>Place to stay</li>
           </Link>
+          <li>NFTs</li>
+
           <li>Community</li>
         </ul>
 
@@ -43,11 +44,11 @@ export default function Nav({ setModalOpen }) {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <li>Place to stay</li>
-
-        <Link to="/nfts">
-          <li>NFTs</li>
+        <Link to="/places-to-stay">
+          <li>Place to stay</li>
         </Link>
+
+        <li>NFTs</li>
 
         <li>Community</li>
         <button

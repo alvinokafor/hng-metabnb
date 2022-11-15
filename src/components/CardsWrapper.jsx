@@ -26,7 +26,7 @@ export default function CardsWrapper({ margin, allCards }) {
         <Card key={index + 1} image={card} />
       ))}
 
-      {currentPath === 'nfts' && allCards.map((card, index) => (
+      {currentPath === 'places-to-stay' && allCards.map((card, index) => (
         <Card key={index + 1} image={card} />
       ))}
     </section>
