@@ -4,7 +4,7 @@ import Filter from "/assets/filter.svg";
 export default function NftSelection() {
   return (
     <ContentWrapper>
-      <ul className="text-xl flex items-center space-x-12 mt-32 mb-20 text-secondary">
+      <ul className="text-lg flex items-center space-x-12 mt-32 mb-20 text-secondary">
         <li className="hidden lg:block">Resturant</li>
         <li className="hidden lg:block">Cottage</li>
         <li className="hidden lg:block">Castle</li>

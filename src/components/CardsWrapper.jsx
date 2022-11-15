@@ -20,7 +20,7 @@ export default function CardsWrapper({ margin, allCards }) {
 
   return (
     <section
-      className={`${margin} mt-10 grid gap-y-8 md:gap-y-8 md:gap-x-6 place-content-end grid-cols-1 md:grid-cols-2 lg:grid-cols-4`}
+      className={`${margin} mt-10 grid gap-y-8 md:gap-y-8 md:gap-x-6 lg:gap-x-20 place-content-end grid-cols-1 md:grid-cols-2 lg:grid-cols-4`}
     >
       {currentPath === "" && CardData.map((card, index) => (
         <Card key={index + 1} image={card} />
